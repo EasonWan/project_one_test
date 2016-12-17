@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Manga Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @manga_lists.each do |manga_list| %>
+      <tr>
+        <td><%= link_to manga_list.name, manga_list %></td>
+<!--         <td><%= link_to 'Edit', edit_manga_list_path(manga_list) %></td>
+        <td><%= link_to 'Destroy', manga_list, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Manga list', new_manga_list_path %>

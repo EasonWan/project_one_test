@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @manga_list.name %>
+</p>
+
+<%= button_to "Add chapter", action: "new" %>
+<form method="post" action="/controller/new" class="button_to" %>
+</form>
+
+<%= link_to 'Edit', edit_manga_list_path(@manga_list) %> |
+<%= link_to 'Back', manga_lists_path %>
