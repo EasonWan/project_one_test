@@ -1,5 +1,7 @@
 class MangaListsController < ApplicationController
   before_action :set_manga_list, only: [:show, :edit, :update, :destroy]
+  params.require(:user).permit(:email, :first_name, :last_name, {avatars: []})
+  
 
   # GET /manga_lists
   # GET /manga_lists.json

@@ -1,4 +1,8 @@
 <%= form_for(@manga_list) do |f| %>
+
+<%= form.file_field :avatars, multiple: true %>
+
+
   <% if @manga_list.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@manga_list.errors.count, "error") %> prohibited this manga_list from being saved:</h2>
