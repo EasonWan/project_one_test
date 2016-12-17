@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # carrierwave gem for multiple images upload
-gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record

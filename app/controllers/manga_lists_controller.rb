@@ -15,6 +15,7 @@ class MangaListsController < ApplicationController
   # GET /manga_lists/new
   def new
     @manga_list = MangaList.new
+    
   end
 
   # GET /manga_lists/1/edit

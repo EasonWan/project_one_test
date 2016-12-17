@@ -8,7 +8,7 @@ require 'carrierwave/orm/activerecord'
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
-  uploader = AvatarUploader.new
+  uploader = MangaUploader.new
   uploader.store!(my_file)
   uploader.retrieve_from_store!('my_file.png')
   # Override the directory where uploaded files will be stored.
